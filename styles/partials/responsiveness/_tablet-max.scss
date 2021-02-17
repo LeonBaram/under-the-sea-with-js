@@ -1,0 +1,65 @@
+@media screen and (max-width: $tablet-max) {
+    h1 {
+        font-size: 10rem;
+        line-height: 100px;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    main .section2 {
+        
+        .additions {
+
+            height: unset;
+
+            article {
+                p {
+                    margin-right: 5%;
+                }
+            }
+        }
+        .meet-nemo {
+            margin-top: 50px;
+        }
+    }
+
+    body.blog {
+        .wrapper {
+            overflow-x: visible;
+        }
+
+        aside ul li {
+            font-size: 1.5rem;
+        }
+    }
+
+    body.contact {
+
+        main {
+            flex-direction: column;
+            padding-bottom: 50px;
+            align-items: center;
+
+            .get-in-touch {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            section.contact-info {
+                align-self: flex-start;
+            }
+        }
+    }
+}

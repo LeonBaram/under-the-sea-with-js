@@ -1,0 +1,67 @@
+@media screen and (max-width: $mobile-min) {
+
+    header {
+        nav ul a {
+
+            font-size: 1.4rem;
+            padding: 9px;
+            margin: 0;
+        }
+
+        .flex-container h1 {
+            width: 100%;
+            font-size: 7rem;
+            line-height: 80px;
+        }
+    }
+
+    main {
+
+        .section1 {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+
+        .section2 {
+            .meet-nemo {
+                margin-top: 120px;
+            }
+        }
+
+        .monthly {
+            .img-container {
+                width: 75%;
+            }
+        }
+
+    }
+
+    body.blog {
+        main {
+            margin-top: 0;
+            section {
+                .img-hero img {
+                    width: 80vw;
+                    box-shadow: -40px 20px $light-blue;
+                }
+                h2 {
+                    font-size: 3.8rem;
+                }
+                article {
+                    padding-left: 0;
+                }
+                section.comments .comment {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    
+    }
+
+    body.contact {
+        .wrapper {
+            overflow-x: visible;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- necolas's normalize.css (https://github.com/necolas/normalize.css/)  plus basic setup like .clearfix, .sr-only, and box-sizing: border-box -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- font awesome JS link -->
+    <script
+      src="https://kit.fontawesome.com/fd6e98527a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Under the Sea: Blog</title>
+  </head>
+  <body class="blog">
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <aside id="about">
+          <div class="img-container">
+            <img
+              src="./assets/side-blog-image.jpg"
+              alt="whale swimming in aquarium in front of crowd"
+            />
+          </div>
+
+          <h4>About Under the Sea</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odit
+            dicta iste, voluptatibus sunt molestias doloribus repudiandae.
+            Distinctio, voluptas vel? Find out more.
+          </p>
+          <h4>Recent Posts</h4>
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Minima nam qui odio!</li>
+            <li>Labore minus necessitatibus obcaecati.</li>
+            <li>Tempore possimus velit dolores!</li>
+          </ul>
+        </aside>
+
+        <section>
+          <h1 class="blog">Blog</h1>
+          <div class="blog-content">
+            <div class="img-container img-hero">
+              <img
+                src="./assets/blog-post-image.jpg"
+                alt="small school of fish swimming around some coral"
+              />
+            </div>
+            <article>
+              <h2>Discovering New Species</h2>
+              <p class="posted">Monday May 4th, 2019 by Dieula</p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur, et ab adipisci unde illum nostrum quibusdam
+                mollitia porro laboriosam quam sapiente cum beatae expedita
+                aperiam libero optio quaerat perferendis, ex recusandae quod
+                culpa neque voluptates fuga? Delectus corporis vel consequuntur
+                assumenda consectetur voluptatum sit quaerat fugiat velit vitae
+                dignissimos adipisci harum eos distinctio nam ratione at omnis
+                expedita dolore veniam saepe, ex, unde quis! Cupiditate nostrum
+                beatae fugiat ducimus architecto totam atque aut ratione
+                molestiae, neque natus, culpa repellat mollitia veritatis!
+                Dolorum maiores aliquam assumenda quas asperiores autem
+                repudiandae necessitatibus voluptate, consequuntur odit
+                repellat, aut voluptas quasi optio non ad! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Consequuntur, et ab adipisci
+                unde illum nostrum quibusdam mollitia porro laboriosam quam
+                sapiente cum beatae expedita aperiam libero optio quaerat
+                perferendis, ex recusandae quod culpa neque voluptates fuga?
+                Delectus corporis vel consequuntur assumenda consectetur
+                voluptatum sit quaerat fugiat velit vitae dignissimos adipisci
+                harum eos distinctio nam ratione at omnis expedita dolore veniam
+                saepe, ex, unde quis! Cupiditate nostrum beatae fugiat ducimus
+                architecto totam atque aut ratione molestiae, neque natus, culpa
+                repellat mollitia veritatis! Dolorum maiores aliquam assumenda
+                quas asperiores autem repudiandae necessitatibus voluptate,
+                consequuntur odit repellat, aut voluptas quasi optio non ad!
+              </p>
+            </article>
+          </div>
+
+          <section class="comments">
+            <h3>Comments:</h3>
+
+            <div class="comment">
+              <div class="img-container">
+                <img src="./assets/comment-1.jpg" alt="profile picture" />
+              </div>
+              <div class="text">
+                <p class="posted">Tuesday October 9th, 2018 by Jeremy</p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Assumenda, veritatis atque? Fugit architecto autem sed non
+                  tempore, in facere reiciendis.
+                </p>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="img-container">
+                <img src="./assets/comment-2.jpg" alt="profile picture" />
+              </div>
+              <div class="text">
+                <p class="posted">Wednesday October 10th, 2018 by Julia</p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Assumenda, veritatis atque? Fugit architecto autem sed non
+                  tempore, in facere reiciendis.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <form action="submit">
+            <label for="name" class="sr-only"></label>
+            <input
+              type="text"
+              name="name"
+              class="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <label for="email" class="sr-only"></label>
+            <input
+              type="email"
+              name="email"
+              class="email"
+              id="email"
+              placeholder="Email address"
+            />
+            <label for="comment" class="sr-only"></label>
+            <textarea
+              name="comment"
+              class="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Comment"
+            ></textarea>
+            <button type="submit">Post Comment</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <p class="juno">Copyright &#169; 2021 Juno</p>
+
+    <script src="./scripts/hamburger-menu.js"></script>
+    <script src="./scripts/blog-comments.js"></script>
+  </body>
+</html>

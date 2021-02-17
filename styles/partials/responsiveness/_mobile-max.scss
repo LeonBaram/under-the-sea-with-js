@@ -1,0 +1,58 @@
+@media screen and (max-width: $mobile-max) {
+
+    main {
+        .section1 {
+            padding: 10px 0;
+
+            h2 {
+                text-align: center;
+            }
+            p {
+                width: 90%;
+                margin-bottom: 40px;
+            }
+
+            .find-more {
+                margin: 20px;
+            }
+        }
+
+        .section2 {
+
+            
+            .img-container {
+                width: 65%;
+            }
+        }
+
+        section.links .wrapper {
+
+            grid-template-columns: 1fr 10fr;
+        }
+
+        section.monthly h2 {
+            text-align: center;
+        }
+    }
+
+    body.blog {
+
+        nav ul li a {
+            margin: 0;
+        }
+        main {
+            section form {
+                position: static;
+                gap: 30px;
+                grid-template-rows: 100px 100px 200px 50px;
+
+                .name, .email {
+                    grid-column: 1 / 3;
+                }
+            }
+            aside {
+                margin-top: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+body {
+  background: $dark-blue;
+}
+
+main {
+    
+  padding-top: 50px;
+
+  .find-more {
+    background: $light-blue;
+    color: $dark-blue;
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+
+  .read-more {
+    background: $dark-blue;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+
+  .section2,
+  .gallery {
+    background: $spruce;
+  }
+
+  .section1 {
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: 70%;
+      margin: 0;
+    }
+  }
+
+  .section2 {
+        // selects addition and meet-nemo divs
+        & > * {
+            display: flex;
+            // position: relative;
+            justify-content: space-between;
+            height: 481px;
+            
+            // selects the article and img-container in both additions and meet-nemo divs
+            & > * {
+            width: 44%;
+            }
+        }
+
+        .img-container {
+            position: relative;
+            height: min-content;
+        }
+
+        
+
+        .additions {
+
+            .img-container {
+                top: -40px;
+                left: -40px;
+
+                img {
+                    box-shadow: 40px 40px $light-blue;
+                }
+            }
+
+            article {
+                margin: auto 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            p{
+                margin-right: 20%;
+            }
+
+            //Check line-height issue in helpcue
+        }
+
+        .meet-nemo {
+
+            margin-top: 100px;
+
+            .img-container {
+                bottom: -30px;
+                right: 0;
+
+                img {
+                    box-shadow: -40px 40px $light-blue;
+                }
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                p{
+                    text-align: right;
+                    margin-left: 20%;
+                    
+                }
+            }
+        }
+
+        
+    }
+
+    section.links {
+
+        padding: 100px 0;
+
+        .wrapper {
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 10fr 1fr 10fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 50px 15px;
+
+        
+            i {
+                color: $dark-blue;
+                background: $light-blue;
+
+                display: inline-block;
+
+                font-size: 2.5rem;
+
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+
+                padding-top: 5px;
+
+                &::before {
+                    position: relative;
+                    top: 20%;
+                }
+            }
+
+            h3 {
+                margin: 0;
+            }
+
+            
+        }
+    }
+
+    .monthly {
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .img-container {
+            width: 27%;
+            
+            img {
+                box-shadow: 40px 40px $light-blue;
+            }
+        }
+
+        article {
+            width: 63%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 100px 0;
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+            li {
+                width: 30%;
+
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+p.juno {
+    margin: 0;
+    color: $dark-blue;
+    text-align: center;
+    background-color: $light-blue;
+}

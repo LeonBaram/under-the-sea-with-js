@@ -1,0 +1,65 @@
+@import './partials/reset';
+@import './partials/typography';
+@import './partials/header';
+@import './partials/home';
+@import './partials/blog';
+@import './partials/contact';
+@import './partials/responsive';
+
+* {
+    transition: 250ms all;
+}
+
+body, body > * {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1500px;
+    width: 83%;
+    margin: 0 auto;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+// elements that are intended to be hidden offscreen
+.offscreen {
+    position: absolute;
+    right: -200vw;
+    transition: right 1s;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        right: 0;
+        transition: right 1s;
+        
+        a {
+            padding: 2vw;
+            
+            &:hover {
+                color: $light-blue;
+            }
+        }
+    }
+
+    i {
+        width: max-content;
+        height: max-content;
+        font-size: 3rem;
+        right: 0;
+        transition: right 1s;
+    }
+}

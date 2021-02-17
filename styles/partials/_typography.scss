@@ -1,0 +1,89 @@
+// Colors
+$light-blue: #86E0F9;
+$spruce: #0F614E;  
+$dark-blue: #0C1423;
+
+// Fonts
+$barlow: 'Barlow', sans-serif;
+$lato: 'Lato', sans-serif;
+
+html {
+    //old font-size:62.5%
+    font-size: 75%;
+}
+
+// very interesting; applies "uppercase" even to p
+:not(p) {
+    text-transform: uppercase;
+}
+
+:not(.find-more) {
+    color: white;
+}
+
+//remove list and link styles
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font: bold 13.8rem $barlow;
+    line-height: 158px; 
+}
+
+h1.blog {
+    font: bold 8rem $barlow;
+    line-height: 115px; 
+}
+
+h2 {
+    font: bold 4.2rem $barlow;
+    letter-spacing: 1px; 
+}
+
+h3 {
+    font: bold 3.2rem $barlow;
+    letter-spacing: 1px; 
+}
+
+h4 {
+    font: bold 2.6rem $barlow;
+}
+
+nav a {
+    font: bold 2rem $barlow;
+    line-height: 36px;
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+.button, button {
+    font: bold 2rem $barlow;
+    line-height: 40px;
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+p, 
+*[placeholder] {
+    font: 2rem $lato;
+    line-height: 40px;
+    text-transform: none;
+}
+
+body.blog aside ul {
+    list-style: outside;
+    
+    li {
+        font: 2rem $lato;
+        line-height: 40px;
+        text-transform: none;
+
+        &::marker {
+            font-size: 1rem;
+        }
+    }
+}

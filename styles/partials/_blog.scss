@@ -1,0 +1,151 @@
+body.blog {
+    background-image: url(../assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
+    overflow-x: hidden;
+    
+
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        position: relative;
+        margin-bottom: 600px;
+        
+
+        
+        aside {
+
+            width: 30%;
+            height: max-content;
+            margin-top: 615px;
+            padding: 0 40px;
+            padding-bottom: 20px;
+
+            background: $spruce;
+
+            .img-container {
+
+                img {
+                
+                    width: 31vw;
+                    margin-left: -13vw;
+                    position: relative;
+                    top: -20px;
+                }
+            }
+
+            ul {
+                padding-left: 2rem;
+                
+                li::marker {
+                    margin-right: 100px;
+                }
+            }
+        }
+
+        & > section {
+            width: 63%;
+        }
+
+        section {
+
+            h1.blog {
+                margin: 0;
+                padding-left: 30px;
+            }
+
+            .blog-content {
+                box-shadow: -10px 10px $light-blue;
+                padding-left: 30px;
+                padding-bottom: 30px;
+                position: relative;
+                top: 30px;
+            }
+
+            .img-hero {
+
+                img {
+                    box-shadow: -40px 40px $light-blue;
+                    width: 60vw;
+                    position: relative;
+                    top: -30px;
+                    margin-right: -60vw;
+                }
+            }
+
+            article {
+                padding-left: 20px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            section.comments {
+
+                margin-top: 100px;
+                padding-left: 30px;
+
+                .comment {
+                    margin-bottom: 100px;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    .img-container {
+                        width: 10%;
+                        padding-top: 10px;
+                    }
+                    .text {
+                        width: 85%;
+                        
+                        p {
+                            margin: 0;
+                            word-wrap: break-word;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.blog form {
+    position: absolute;
+    right: 0;
+}
+
+form {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 200px 50px;
+    gap: 50px;
+
+    * {
+        border: none;
+        outline: none;
+    }
+
+    .name, .email {
+        background: $dark-blue;
+        border-bottom: solid 2px $light-blue;
+    }
+    .comment {
+        background: $dark-blue;
+        border: solid 2px $light-blue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        padding: 10px;
+    }
+    button {
+        background: $spruce;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 50px;
+    }
+}

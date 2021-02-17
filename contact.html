@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- necolas's normalize.css (https://github.com/necolas/normalize.css/)  plus basic setup like .clearfix, .sr-only, and box-sizing: border-box -->
+  <link rel="stylesheet" href="./styles/normalize.css" />
+
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet" />
+
+  <!-- main css file -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+
+  <!-- font awesome JS link -->
+  <script src="https://kit.fontawesome.com/fd6e98527a.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+</head>
+
+<body class="contact">
+  <div class="wrapper">
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog.html#about">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="get-in-touch">
+        <h1 class="blog">Get In Touch</h1>
+        <form action="submit">
+          <label for="name" class="sr-only"></label>
+          <input type="text" name="name" class="name" id="name" placeholder="Name" />
+          <label for="email" class="sr-only"></label>
+          <input type="email" name="email" class="email" id="email" placeholder="Email address" />
+          <label for="comment" class="sr-only"></label>
+          <textarea name="comment" class="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <section class="contact-info">
+        <span class="social-media">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+        </span>
+        <h4>info@email.com</h4>
+        <ul class="address">
+          <li>123 - 456 - 7890</li>
+          <li>123 Queen Street West, Unit 10</li>
+          <li>Toronto, Ontario</li>
+          <li>M5V2D5</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <p class="juno">Copyright &#169; 2021 Juno</p>
+
+  <script src="./scripts/hamburger-menu.js"></script>
+</body>
+
+</html>
